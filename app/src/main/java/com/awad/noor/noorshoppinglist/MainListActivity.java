@@ -20,8 +20,8 @@ import android.view.ViewGroup;
 
 import android.widget.TextView;
 
-import MainListFragment.CurrentListFragment;
-import MainListFragment.HistoryFragment;
+import com.awad.noor.noorshoppinglist.MainListFragment.CurrentListFragment;
+import com.awad.noor.noorshoppinglist.MainListFragment.HistoryFragment;
 
 public class MainListActivity extends AppCompatActivity {
 

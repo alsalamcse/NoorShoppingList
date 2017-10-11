@@ -1,4 +1,4 @@
-package MainListFragment;
+package com.awad.noor.noorshoppinglist.MainListFragment;
 
 
 import android.os.Bundle;
@@ -12,10 +12,10 @@ import com.awad.noor.noorshoppinglist.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class CurrentListFragment extends Fragment {
+public class HistoryFragment extends Fragment {
 
 
-    public CurrentListFragment() {
+    public HistoryFragment() {
         // Required empty public constructor
     }
 
@@ -24,7 +24,7 @@ public class CurrentListFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_current_list, container, false);
+        return inflater.inflate(R.layout.fragment_history2, container, false);
     }
 
 }
