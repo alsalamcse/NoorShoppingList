@@ -151,12 +151,13 @@ public class MainListActivity extends AppCompatActivity {
                     currentListFragment=new CurrentListFragment();
                 return currentListFragment;
             }
-            if (position==1)
-                    if (historyFragment==null)
-                        historyFragment=new HistoryFragment();
-            return currentListFragment;
+            if (position==1) {
+                if (historyFragment == null)
+                    historyFragment = new HistoryFragment();
+                return currentListFragment;
+            }
 
-
+        return null;
         }
 
         @Override
