@@ -1,16 +1,17 @@
 package com.awad.noor.noorshoppinglist.MainListFragment;
 
 
-import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ImageButton;
-import android.widget.ListView;
-import android.widget.TextView;
+        import android.os.Bundle;
+        import android.support.v4.app.Fragment;
+        import android.view.LayoutInflater;
+        import android.view.View;
+        import android.view.ViewGroup;
+        import android.widget.ArrayAdapter;
+        import android.widget.ImageButton;
+        import android.widget.ListView;
+        import android.widget.TextView;
 
-import com.awad.noor.noorshoppinglist.R;
+        import com.awad.noor.noorshoppinglist.R;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -31,7 +32,7 @@ public class CurrentListFragment extends Fragment
         // Required empty public constructor
     }
 
-//2.
+    //2.
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -44,6 +45,10 @@ public class CurrentListFragment extends Fragment
         tvCountValue=(TextView) view.findViewById(R.id.tvCountValue);
         imbSave=(ImageButton) view.findViewById(R.id.imbSave);
         lstvCurrent=(ListView) view.findViewById(R.id.lstvCurrent);
+
+
+        String[] ar={"noor","rimaa","teya","muhammed","shada"};
+        ArrayAdapter<String> arrayAdapter=new ArrayAdapter<String>()
 
 
         return view;
