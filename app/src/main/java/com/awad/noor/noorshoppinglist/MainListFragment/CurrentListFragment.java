@@ -48,7 +48,7 @@ public class CurrentListFragment extends Fragment
 
 
         String[] ar={"noor","rimaa","teya","muhammed","shada"};
-        ArrayAdapter<String> arrayAdapter=new ArrayAdapter<String>()
+        //ArrayAdapter<String> arrayAdapter=new ArrayAdapter<String>()
 
 
         return view;
