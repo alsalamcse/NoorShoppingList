@@ -154,7 +154,7 @@ public class MainListActivity extends AppCompatActivity {
             if (position==1) {
                 if (historyFragment == null)
                     historyFragment = new HistoryFragment();
-                return currentListFragment;
+                return historyFragment;
             }
 
         return null;

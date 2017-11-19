@@ -7,6 +7,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class AddItem extends AppCompatActivity {
     private EditText etAmount;
     private EditText etName;
@@ -41,6 +44,12 @@ public class AddItem extends AppCompatActivity {
         String stunits= etUnits.getText().toString();
         double amount=Double.parseDouble(stamount);
         double price=Double.parseDouble(stPrice);
-        
+
+        DatabaseReference reference;
+        //** TODO לקבלת קישור למסד הנתונים שלנו
+        //** // // TODO קישור הינו לשורש של המסד הנתונים
+        reference= FirebaseDatabase.getInstance().getReference();
+
+        reference.child("list").setValue("lolo");
     }
 }
