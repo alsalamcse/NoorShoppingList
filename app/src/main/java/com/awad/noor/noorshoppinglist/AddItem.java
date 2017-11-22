@@ -17,7 +17,7 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class AddItem extends AppCompatActivity {
+public class AddItem extends AppCompatActivity implements View.OnClickListener {
     private EditText etAmount;
     private EditText etName;
     private EditText etPrice;
@@ -35,13 +35,8 @@ public class AddItem extends AppCompatActivity {
         etUnits = (EditText) findViewById(R.id.etUnits);
         ibtnImge = (ImageButton) findViewById(R.id.ibtnImage);
         btnSave = (Button) findViewById(R.id.btnSave);
+        btnSave.setOnClickListener(this);
 
-        btnSave.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                dataHandler();
-            }
-        });
     }
     public void dataHandler()
     {
@@ -98,4 +93,10 @@ public class AddItem extends AppCompatActivity {
         // TODO Testing
         //reference.child("list").setValue("lolo");
     }
+
+    @Override
+    public void onClick(View view) {
+        dataHandler();
+    }
 }
+
