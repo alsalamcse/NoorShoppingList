@@ -1,5 +1,7 @@
 package com.awad.noor.noorshoppinglist.Data;
 
+import android.widget.EditText;
+
 /**
  * Created by user on 06/11/2017.
  * this class represent a product that will be at the shopping list
@@ -47,5 +49,53 @@ public class Product
     }
 
     public Product() {
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public double getAmount() {
+        return amount;
+    }
+
+    public void setAmount(double amount) {
+        this.amount = amount;
+    }
+
+    public boolean isCompleted() {
+        return isCompleted;
+    }
+
+    public void setCompleted(boolean completed) {
+        isCompleted = completed;
+    }
+
+    public String getImgPath() {
+        return imgPath;
+    }
+
+    public void setImgPath(String imgPath) {
+        this.imgPath = imgPath;
+    }
+
+    public String getKeyId() {
+        return KeyId;
+    }
+
+    public void setKeyId(String keyId) {
+        KeyId = keyId;
     }
 }
