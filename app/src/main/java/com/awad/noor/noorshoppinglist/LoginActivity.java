@@ -58,7 +58,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
 
-
         private void signIn(String email, String passw) {
             auth.signInWithEmailAndPassword(email,passw).addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
                 @Override
@@ -78,7 +77,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 }
             });
         }
-
 
     @Override
     public void onClick(View view) {

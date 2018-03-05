@@ -85,7 +85,6 @@ public class CurrentListFragment extends Fragment
             {
                 //11.
                 productAdapter.clear();
-                for (DatabaseReference)
                 for (DataSnapshot ds: dataSnapshot.getChildren())
                 {
                     Product p=ds.getValue(Product.class);

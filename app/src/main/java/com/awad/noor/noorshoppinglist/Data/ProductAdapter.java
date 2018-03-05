@@ -8,6 +8,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.CheckBox;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.awad.noor.noorshoppinglist.R;
@@ -39,7 +41,18 @@ public class ProductAdapter extends ArrayAdapter<Product>
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        View view = LayoutInflater.from(getContext()).inflate(R.layout.product_item, parent);
+        View view = LayoutInflater.from(getContext()).inflate(R.layout.product_item, parent,false);
+
+        TextView tvName= (TextView) view.findViewById(R.id.itmTvName);
+        TextView tvPrice= (TextView) view.findViewById(R.id.itmTvPrice);
+        TextView tvAmount= (TextView) view.findViewById(R.id.itmTvAmount);
+        ImageView ivImage= (ImageView) view.findViewById(R.id.itmImage);
+        CheckBox chxCompleted= (CheckBox) view.findViewById(R.id.itmChblsCompleted);
+        Product p=getItem(position);
+        tvName.setText(p.getName());
+        tvPrice.setText(p.getPrice()+"");
+        tvAmount.setText(p.getAmount()+"");
+        chxCompleted.setChecked(p.isCompleted());
 
         return  view;
     }
